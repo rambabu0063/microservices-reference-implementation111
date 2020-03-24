@@ -178,7 +178,7 @@
                 "workflowKeyVaultName": "[concat(parameters('environmentName'),'-wf-',uniqueString(resourceGroup().id))]",
                 "workflowServiceAccessKey": "WorkflowServiceAccessKey",
                 "agentCount": 1,
-                "agentVMSize": "Standard_D2_v2"
+                "agentVMSize": "Standard_D4s_v3"
             },
             "qa": {
                 "aksClusterName": "[uniqueString(variables('clusterNamePrefix'), resourceGroup().id)]",
@@ -206,7 +206,7 @@
                 "workflowKeyVaultName": "[concat(parameters('environmentName'),'-wf-',uniqueString(resourceGroup().id))]",
                 "workflowServiceAccessKey": "WorkflowServiceAccessKey",
                 "agentCount": 3,
-                "agentVMSize": "Standard_D2_v2"
+                "agentVMSize": "Standard_D4s_v3"
             },
             "staging": {
                 "aksClusterName": "[uniqueString(variables('clusterNamePrefix'), resourceGroup().id)]",
@@ -234,7 +234,7 @@
                 "workflowKeyVaultName": "[concat(parameters('environmentName'),'-wf-',uniqueString(resourceGroup().id))]",
                 "workflowServiceAccessKey": "WorkflowServiceAccessKey",
                 "agentCount": 3,
-                "agentVMSize": "Standard_D2_v2"
+                "agentVMSize": "Standard_D4s_v3"
             },
             "prod": {
                 "aksClusterName": "[uniqueString(variables('clusterNamePrefix'), resourceGroup().id)]",
@@ -262,7 +262,7 @@
                 "workflowKeyVaultName": "[concat(parameters('environmentName'),'-wf-',uniqueString(resourceGroup().id))]",
                 "workflowServiceAccessKey": "WorkflowServiceAccessKey",
                 "agentCount": 3,
-                "agentVMSize": "Standard_D2_v2"
+                "agentVMSize": "Standard_D4s_v3"
             }
         }
     },
